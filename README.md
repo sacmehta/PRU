@@ -34,7 +34,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py --model LSTM --emsize 400 --nhid 1000 --da
 GPUs by using DataParallel module in PyTorch.
 
 ## Results
-Our model achieves perplexity of 
+With standard dropout, our model achieves following results on the PTB dataset. See our paper for more details. 
 
 | Model | g | k | emsize | nhid | # Params | Perplexity (val) | Perplexity (test) |  
 | -- | -- | -- | -- | -- | -- | -- | -- |
