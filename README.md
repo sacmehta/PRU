@@ -9,8 +9,8 @@ bash getdata.sh
 ```
 This script will download the data and place in directory named **data**.
 
-## Training PRU on PenTree dataset
-You can train PRU on PenTree dataset (or PTB) by using following command:
+## Training PRU on the PenTree dataset
+You can train PRU on the PenTree dataset (or PTB) by using following command:
 
 ```
 CUDA_VISIBLE_DEVICES=0 python main.py --model PRU --g 4 --k 2 --emsize 400 --nhid 1400 --data ./data/penn 
@@ -32,6 +32,13 @@ CUDA_VISIBLE_DEVICES=0 python main.py --model LSTM --emsize 400 --nhid 1000 --da
 
 **NOTE:** Our implementation currently supports training on single GPU. However, you can easily update it to support multiple
 GPUs by using DataParallel module in PyTorch.
+
+## Testing PRU on the PenTree dataset
+You can test the models using following command
+```
+CUDA_VISIBLE_DEVICES=0 python test.py --model PRU --g 4 --k 2 --emsize 400 --nhid 1400 --data ./data/penn --weightFile <trained model file>
+```
+Please see **test.py** for details about command line arguments.
 
 ## Results
 With standard dropout, our model achieves following results on the PTB dataset. See our paper for more details. 
