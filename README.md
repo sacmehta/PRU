@@ -16,13 +16,14 @@ You can train PRU on the PenTree dataset (or PTB) by using following command:
 CUDA_VISIBLE_DEVICES=0 python main.py --model PRU --g 4 --k 2 --emsize 400 --nhid 1400 --data ./data/penn 
 ``` 
 where 
- * **--model** specifies the recurrent unit (either LSTM or PRU)
- * **--g** specifies the number of groups to be used in the grouped linear transformation, 
- * **--k** species the number of pyramidal levels in the pyramidal transformation
- * **--emsize** specifies the embedding layer size
- * **--nhid** specifies the hidden layer size 
- * **--data** specifies the location of the data.
-
+```
+ --model specifies the recurrent unit (either LSTM or PRU)
+ --g specifies the number of groups to be used in the grouped linear transformation, 
+ --k species the number of pyramidal levels in the pyramidal transformation
+ --emsize specifies the embedding layer size
+ --nhid specifies the hidden layer size 
+ --data specifies the location of the data.
+```
 Please see **main.py** for details about other supported command line arguments.
 
 If you want to train language model using LSTM on PTB dataset, then you can do it by using the following command:
@@ -51,7 +52,7 @@ With standard dropout, our model achieves following results on the PTB dataset. 
 | -- | -- | -- | -- | -- | -- | -- | -- |
 | PRU | 1 | 2 | 400 | 1000 | 18.97 | 69.8 | 67.78 |
 | PRU | 2 | 2 | 400 | 1200 | 18.51 | 67.17 | 64.92 |
-| PRU | 4 | 2 | 400 | 1400 | 18.90 | 64.76 | 62.42 | 
+| PRU | 4 | 2 | 400 | 1400 | 18.90 | **64.76** | **62.42** | 
 
 ## Pre-requisite
 To run this code, you need to have following libraries:

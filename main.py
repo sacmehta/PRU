@@ -179,6 +179,10 @@ if __name__ == '__main__':
     if torch.cuda.is_available():
         torch.cuda.manual_seed(args.seed)
 
+    if args.model == 'LSTM':
+        args.g = 1
+        args.k = 1
+
     print(args)
 
     # train and evaluate on the validation set
