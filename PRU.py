@@ -9,6 +9,7 @@ class PRU(nn.Module):
     '''
     This class implements the Pyramidal recurrent unit with LSTM gating structure.
     x_t is processed using pyramidal transform while h_{t-1} is processed using grouped linear transform.
+    Note that this will be slower than LSTM because it does not use cuDNN.
     '''
     def __init__(self, input_size, hidden_size, k=3, groups=3, **kwargs):
         super(PRU, self).__init__()

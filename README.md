@@ -46,13 +46,13 @@ With standard dropout, our model achieves following results on the PTB dataset. 
 
 | Model | g | k | emsize | nhid | # Params | Perplexity (val) | Perplexity (test) |  
 | -- | -- | -- | -- | -- | -- | -- | -- |
-| LSTM | NA | NA | 400 | 1000 | 19.87 | 68.57 | 66.29 |
-| LSTM | NA | NA | 400 | 1200 | 25.79 | 69.17 | 67.16 |
-| LSTM | NA | NA | 400 | 1400 | 32.68 | 70.88 | 68.55 |
+| LSTM | NA | NA | 400 | 1000 | 19.87 | 67.8 | 66.05 |
+| LSTM | NA | NA | 400 | 1200 | 25.79 | 69.29 | 67.17 |
+| LSTM | NA | NA | 400 | 1400 | 32.68 | 70.23 | 68.32 |
 | -- | -- | -- | -- | -- | -- | -- | -- |
-| PRU | 1 | 2 | 400 | 1000 | 18.97 | 69.8 | 67.78 |
-| PRU | 2 | 2 | 400 | 1200 | 18.51 | 67.17 | 64.92 |
-| PRU | 4 | 2 | 400 | 1400 | 18.90 | **64.76** | **62.42** | 
+| PRU | 1 | 2 | 400 | 1000 | 18.97 | 69.99 | 68.06 |
+| PRU | 2 | 2 | 400 | 1200 | 18.51 | 66.39 | 64.30 |
+| PRU | 4 | 2 | 400 | 1400 | 18.90 | **64.40** | **62.62** | 
 
 ## Pre-requisite
 To run this code, you need to have following libraries:

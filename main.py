@@ -163,7 +163,7 @@ if __name__ == '__main__':
     parser.add_argument('--clip', type=float, default=0.25, help='gradient clipping')
     parser.add_argument('--batch_size', type=int, default=20, help='batch size')
     parser.add_argument('--bptt', type=int, default=70, help='sequence length')
-    parser.add_argument('--epochs', type=int, default=202, help='Max. number of epochs')
+    parser.add_argument('--epochs', type=int, default=200, help='Max. number of epochs')
     parser.add_argument('--nonmono', type=int, default=5, help='non monotonous interval')
     parser.add_argument('--alpha', type=float, default=2,
                         help='alpha L2 regularization on RNN activation (alpha = 0 means no regularization)')

@@ -85,7 +85,10 @@ if __name__ == '__main__':
     np.random.seed(args.seed)
     torch.manual_seed(args.seed)
     if torch.cuda.is_available():
+        args.cuda = True
         torch.cuda.manual_seed(args.seed)
+    else:
+        args.cuda = False
 
     # test the trained model (best one on the validation set) on the test set
     test(args)
