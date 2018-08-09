@@ -49,7 +49,7 @@ With standard dropout, our model achieves following results on the PTB dataset. 
 | LSTM | NA | NA | 400 | 1000 | 19.87 | 67.8 | 66.05 | 159 | [Link](https://drive.google.com/open?id=1FzhY03OlBQpLKwTIfMFcQVfwPYDfXO1I) |
 | LSTM | NA | NA | 400 | 1200 | 25.79 | 69.29 | 67.17 | 206 | [Link](https://drive.google.com/open?id=1NquUJTUOewyso7BfcpW6mHqYh1GvlBDI) |
 | LSTM | NA | NA | 400 | 1400 | 32.68 | 70.23 | 68.32 | 261 | [Link](https://drive.google.com/open?id=1nD8fnruUrO3WhMSsWU4P9zswnXy59n8T) |
-| -- | -- | -- | -- | -- | -- | -- | -- |
+| -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 | PRU | 1 | 2 | 400 | 1000 | 18.97 | 69.99 | 68.06 | 151 | [Link](https://drive.google.com/open?id=1pAWz6ZQDTJc0C3bWNBxeQJ0DREo9EZqo) |
 | PRU | 2 | 2 | 400 | 1200 | 18.51 | 66.39 | 64.30 | 148 | [Link](https://drive.google.com/open?id=1rMBQio3nITbCgPhMkgw9Kev0gVDBBS6M) |
 | PRU | 4 | 2 | 400 | 1400 | 18.90 | **64.40** | **62.62** | 151 | [Link](https://drive.google.com/open?id=1h2f3-tD7AJhmWNX-p5qMdXjaVfVd0usF) |
