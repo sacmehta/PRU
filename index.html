@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="main.css" rel="stylesheet" media="all">
+<meta name="description" content="ESPNet: Efficient Spatial Pyramid of Dilated Convolutions for Semantic Segmentation" />
+<meta name="keywords" content="cnn, semantic segmentation">
+<script>
+function buttonSwitch(id, text)
+{
+	old_src = document.getElementById(id).src;
+	ind = old_src.lastIndexOf('/');
+	document.getElementById(id).src = old_src.substr(0,ind+1) + text;
+}
+
+</script>
+<title>ESPNet: Efficient Spatial Pyramid of Dilated Convolutions for Semantic Segmentation</title>
+</head>
+
+<body>
+
+<div id="top_arrow" style="position: fixed; bottom: 10px; right: 10px;">
+<a href="#title">
+<img src="webfigures/top_arrow.jpg" style="border: 0pt none ; width: 26px; height: 32px;"/></a>
+</div>
+
+<h2 id="title" class="auto-style1">Pyramidal Recurrent Unit for Language Modeling</h2>
+
+<p class="auto-style7"  align="center">
+	<a href="https://sachinmehtangb.wixsite.com/sachinmehta" target="_blank">Sachin Mehta</a><sup>1</sup>, <a href="" target="">Rik Koncel-Kedziorski</a><sup>1</sup>, <a href="http://legacydirs.umiacs.umd.edu/~mrastega/" target="_blank">Mohammad Rastegari</a><sup>2</sup>, and <a href="http://ssli.ee.washington.edu/~hannaneh/index.html" target="_blank">Hannaneh Hajishirzi</a><sup>1</sup>
+</p>
+
+<p class="auto-style7"  align="center">
+<sup>1</sup>
+<a href="https://www.washington.edu/", target="_blank">University of Washington, Seattle, WA, USA</a>
+<br>
+<sup>2</sup>
+<a href="http://allenai.org/", target="_blank">Allen Institute for AI</a> and <a href="https://xnor.ai/", target="_blank">XNOR.AI</a>
+</p>
+<!--<p class="auto-style7"  align="center">&nbsp;&nbsp;&nbsp; </p>-->
+<p align=left>&nbsp;</p>
+<p align="center">
+<table style="width:100%" align="center">
+<tr>
+	<td><img width=90% alt="" src="webfigures/pru.png"></td>	
+</tr>
+<tr>
+	<td><p><b>Figure:</b> Block diagram visualizing the transformations in pyramidal recurrent unit (left) and the LSTM (bottom right) along with the LSTM gating architecture (top right). </p></td>
+</tr>
+</table>
+
+<p class="style2"><strong><span class="auto-style6">Abstract</span></strong></p>
+<p class="auto-style5">LSTMs are powerful tools for modeling contextual information, as evidenced by their success at the task of language modeling. However, modeling contexts in very high dimensional space can lead to poor generalizability. We introduce the Pyramidal Recurrent Unit (PRU), which enables learning representations in high dimensional space with more generalization power and fewer parameters. PRUs replace the linear transformation in LSTMs with more sophisticated interactions including pyramidal and grouped linear transformations. This architecture gives strong results on word-level language modeling while reducing the number of parameters significantly. In particular, PRU improves the perplexity of a recent state-of-the-art language model (Merity et al., 2018)  by up to <b>1.3</b> points while learning <b>15-20%</b> fewer parameters. For similar number of model parameters, PRU outperforms all previous RNN models that exploit different gating mechanisms and transformations. We provide a detailed examination of the PRU and its behavior on the language modeling tasks.
+</p>
+
+<p class="auto-style5">&nbsp;</p>
+<p id="downloads", class="auto-style4"><strong>Downloads</strong></p>
+<table cellSpacing=4 cellPadding=2 border=0 style="width: 90%">
+<tr COLSPAN="2">
+	<td align="center" valign="center">
+		<img style="padding:0; clear:both; " src="webfigures/pru.png" align="middle" alt="Snapshot for paper" class="pdf" width="250" />
+	</td>
+	<td>
+	</td>
+	<td align="left" class="auto-style5"><i>Pyramidal Recurrent Unit for Language Modeling</i>
+	<br>
+	Sachin Mehta, Rik Koncel-Kedziorski, Mohammad Rastegari, and Hannaneh Hajishirzi
+	<br>
+		<!--<i>European Conference on Computer Vision <b>(ECCV)</b>, 2018</i> -->
+	<br>
+	<img alt="" height="32" src="webfigures/pdf.jpg" width="31">&nbsp;&nbsp;[<a target="_blank" href="">Paper</a>]<br><br>
+	<img alt="" height="32" src="webfigures/github.jpg" width="31">&nbsp;&nbsp;[<a target="_blank" href="https://github.com/sacmehta/PRU/">Source Code</a>]<br><br>
+	</td>
+	</tr>
+</table>
+<br>
+	
+<p class="auto-style5">&nbsp;</p>
+<p id="performance", class="auto-style4"><strong>Results on the PenTree Bank (PTB) and the WikiText-2 (WT-2) dataset</strong></p>
+<p class="auto-style5">Below table compares the performance of the PRU with different architectures for Langauge Modeling. PRU delivers the best results, even with standard dropout. </p>
+<table style="width:100%" align="center">
+	<tr>
+	<td>
+		<img align="middle" alt="" width="90%" src="webfigures/results.png"/>
+	</td>
+	<tr>
+    <tr>
+	<td colspan=3><p class="auto-style5"><b>Table:</b> Comparison of single model word-level perplexity of PRU with state-of-the-art methods on PTB and WT-2 datasets.</p></td>
+</tr>
+</table>
+
+<p class="auto-style1"><font color="#999999">This page is adapted from <a href="https://sacmehta.github.io/ESPNet/" target="_blank">ESPNet</a>.</font></p>
+
+</body>
+
+</html>
+
