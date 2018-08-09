@@ -38,6 +38,9 @@ def test(args):
     criterion = nn.CrossEntropyLoss()
 
     # Load the model weights.
+    if not os.path.isfile(args.weightFile):
+        print('Pre-trained weight file does not exist. Please check the location: {}'.format(args.weightFile))
+        exit()
     model, criterion, optimizer, _ = model_load(args.weightFile)
     if torch.cuda.is_available():
         model = model.cuda()
@@ -76,7 +79,7 @@ if __name__ == '__main__':
     parser.add_argument('--seed', type=int, default=1111, help='random seed')
     parser.add_argument('--g', type=int, default=2, help='No. of groups in Grouped Linear Transformation')
     parser.add_argument('--k', type=int, default=2, help='No. of pyramidal levels in Pyramidal Transformation')
-    parser.add_argument('--weightFile', type=str, default='./results_PRU/model_nl_3_nh_1200_b_20_ep_200_20180704-161414_g_2.pt', help='Weight file')
+    parser.add_argument('--weightFile', type=str, default='./results_PRU/model_nl_3_nh_1200_g_2_k_2.pt', help='Weight file')
 
     args = parser.parse_args()
     args.tied = True
