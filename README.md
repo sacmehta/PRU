@@ -65,6 +65,17 @@ We recommend to use [Anaconda](https://conda.io/docs/user-guide/install/linux.ht
 
 A large portion of this repo is borrowed from [AWD-LSTM](https://github.com/salesforce/awd-lstm-lm) repository.
 
+## Citation
+If ESPNet is useful for your research, then please cite our paper.
+```
+@inproceedings{mehta2018pru,
+  title={Pyramidal Recurrent Unit for Language Modeling},
+  author={Sachin Mehta, Rik Koncel-Kedziorski, Mohammad Rastegari, and Hannaneh Hajishirzi},
+  booktitle={EMNLP},
+  year={2018}
+}
+```
+
 ## References
 
  1. Hochreiter, Sepp, and Jürgen Schmidhuber. "Long short-term memory." Neural computation 9.8 (1997): 1735-1780. 
