@@ -1,6 +1,6 @@
 # Pyramidal Recurrent Units (PRU) for Language Modeling
 
-This repository contains the source code of our paper, Pyramidal Recurrent units for language modeling.
+This repository contains the source code of our paper, Pyramidal Recurrent units for language modeling, which is accepted for publication at [EMNLP'18](http://emnlp2018.org/).
 
 ## Downloading LM Datasets
 You can download the dataset by running the following script
