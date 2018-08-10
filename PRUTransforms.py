@@ -5,7 +5,7 @@ import torch.nn.functional as F
 import numpy as np
 
 __author__ = "Sachin Mehta"
-__license__ = "GPL"
+__license__ = "MIT"
 __version__ = "1.0.1"
 __maintainer__ = "Sachin Mehta"
 
