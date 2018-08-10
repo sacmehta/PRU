@@ -68,7 +68,7 @@ We recommend to use [Anaconda](https://conda.io/docs/user-guide/install/linux.ht
 A large portion of this repo is borrowed from [AWD-LSTM](https://github.com/salesforce/awd-lstm-lm) repository.
 
 ## Citation
-If ESPNet is useful for your research, then please cite our paper.
+If PRU is useful for your research, then please cite our paper.
 ```
 @inproceedings{mehta2018pru,
   title={Pyramidal Recurrent Unit for Language Modeling},
