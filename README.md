@@ -66,7 +66,7 @@ Below table compares the perplexity scores of language models with LSTM and PRU 
 
 ## Pre-requisite
 To run this code, you need to have following libraries:
-* [PyTorch](http://pytorch.org/) - We tested with v0.3.0
+* [PyTorch](http://pytorch.org/) - We tested with v0.3.1
 * Python - We tested our code with Pythonv3. If you are using Python v2, please feel free to make necessary changes to the code. 
 
 We recommend to use [Anaconda](https://conda.io/docs/user-guide/install/linux.html). We have tested our code on Ubuntu 16.04.
