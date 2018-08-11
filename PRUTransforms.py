@@ -141,7 +141,7 @@ class GroupedLinear(nn.Module):
         out = torch.add(out, self.bias)
         out1, out2, out3, out4 = torch.split(out, self.outDim, dim=2) #split for 4 gates
 
-        # merge the group outputs
+        # Reshape the outputs
         out1 = out1.contiguous().view(bsz, -1)
         out2 = out2.contiguous().view(bsz, -1)
         out3 = out3.contiguous().view(bsz, -1)
