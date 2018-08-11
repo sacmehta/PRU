@@ -48,7 +48,7 @@ CUDA_VISIBLE_DEVICES=0 python test.py --model PRU --g 4 --k 2 --emsize 400 --nhi
 Please see **test.py** for details about command line arguments.
 
 ## Pretrained models
-Below table provides perplexity scores and links to download the pretrained models. These models are trained with a standard dropout.
+Below table compares the perplexity scores of language models with LSTM and PRU as a recurrent unit (with standard dropout only). We can see that PRU has better generalization properties than LSTMs and enables learning representations in very high-dimensional space efficiently.
 
 | Model | g | k | emsize | nhid | # Params | Perplexity (val) | Perplexity (test) | Model Size (in MB) | Model Link | 
 | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
@@ -61,8 +61,8 @@ Below table provides perplexity scores and links to download the pretrained mode
 | PRU | 4 | 2 | 400 | 1400 | 18.90 | **64.40** | **62.62** | 151 | [Link](https://drive.google.com/open?id=1h2f3-tD7AJhmWNX-p5qMdXjaVfVd0usF) |
 
 **NOTE**:
- * The performance of PRU can be further improved by using advanced methods such as weight dropout and dynamic pointer based evaluations. If you use evaluate above models with dynamic evaluation, then you should see an improvement in perplexity by about 6-8%.
- * Replacing LSTM with PRU in AWD-LSTM repository, we achieve the best results with fewer parameters. See our paper for more details.  
+ * The performance of PRU can be further improved by using advanced methods such as weight dropout and [dynamic evaluations](https://arxiv.org/pdf/1709.07432.pdf). If you evaluate above pretrained models with dynamic evaluation, then you should see an improvement in perplexity by about 6-8% for both LSTM and PRU-based models.
+ * Replacing LSTM with PRU in [AWD-LSTM](https://github.com/salesforce/awd-lstm-lm), we obtained the best results, however, with fewer parameters. See our paper for more details.  
 
 ## Pre-requisite
 To run this code, you need to have following libraries:
