@@ -47,8 +47,8 @@ CUDA_VISIBLE_DEVICES=0 python test.py --model PRU --g 4 --k 2 --emsize 400 --nhi
 ```
 Please see **test.py** for details about command line arguments.
 
-## Results and pretrained models
-With standard dropout, our model achieves following results on the PTB dataset.
+## Pretrained models
+Below table provides perplexity scores and links to download the pretrained models. These models are trained with a standard dropout.
 
 | Model | g | k | emsize | nhid | # Params | Perplexity (val) | Perplexity (test) | Model Size (in MB) | Model Link | 
 | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
@@ -60,7 +60,9 @@ With standard dropout, our model achieves following results on the PTB dataset.
 | PRU | 2 | 2 | 400 | 1200 | 18.51 | 66.39 | 64.30 | 148 | [Link](https://drive.google.com/open?id=1rMBQio3nITbCgPhMkgw9Kev0gVDBBS6M) |
 | PRU | 4 | 2 | 400 | 1400 | 18.90 | **64.40** | **62.62** | 151 | [Link](https://drive.google.com/open?id=1h2f3-tD7AJhmWNX-p5qMdXjaVfVd0usF) |
 
-With advanced dropouts such as weight dropout, PRU achieves s perplexity of 56.56 on the PenTree dataset while learning only 19 million parameters. See our paper for more details.
+**NOTE**:
+ * The performance of PRU can be further improved by using advanced methods such as weight dropout and dynamic pointer based evaluations. If you use evaluate above models with dynamic evaluation, then you should see an improvement in perplexity by about 6-8%.
+ * Replacing LSTM with PRU in AWD-LSTM repository, we achieve the best results with fewer parameters. See our paper for more details.  
 
 ## Pre-requisite
 To run this code, you need to have following libraries:
