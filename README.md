@@ -4,6 +4,10 @@ This repository contains the source code of our paper, Pyramidal Recurrent units
 
 **NOTE**: Though we tested our module (PRU) on a highly competitive task of language modeling, our module can be generic enough and can be used for different applications where RNNs (such as LSTMs and GRUs) are currently used, such as question answering, text classification, and machine translation.
 
+## Block diagram of PRU
+
+![PRU](images/pru.png)
+
 ## Downloading LM Datasets
 You can download the dataset by running the following script
 ```
