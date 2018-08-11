@@ -8,7 +8,7 @@ This repository contains the source code of our paper, Pyramidal Recurrent units
 
 ![PRU](images/pru.png)
 
-## Downloading LM Datasets
+## Downloading Language Modeling Datasets
 You can download the dataset by running the following script
 ```
 bash getdata.sh
@@ -47,8 +47,8 @@ CUDA_VISIBLE_DEVICES=0 python test.py --model PRU --g 4 --k 2 --emsize 400 --nhi
 ```
 Please see **test.py** for details about command line arguments.
 
-## Results
-With standard dropout, our model achieves following results on the PTB dataset. See our paper for more details. 
+## Results and pretrained models
+With standard dropout, our model achieves following results on the PTB dataset.
 
 | Model | g | k | emsize | nhid | # Params | Perplexity (val) | Perplexity (test) | Model Size (in MB) | Model Link | 
 | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
@@ -59,6 +59,8 @@ With standard dropout, our model achieves following results on the PTB dataset. 
 | PRU | 1 | 2 | 400 | 1000 | 18.97 | 69.99 | 68.06 | 151 | [Link](https://drive.google.com/open?id=1pAWz6ZQDTJc0C3bWNBxeQJ0DREo9EZqo) |
 | PRU | 2 | 2 | 400 | 1200 | 18.51 | 66.39 | 64.30 | 148 | [Link](https://drive.google.com/open?id=1rMBQio3nITbCgPhMkgw9Kev0gVDBBS6M) |
 | PRU | 4 | 2 | 400 | 1400 | 18.90 | **64.40** | **62.62** | 151 | [Link](https://drive.google.com/open?id=1h2f3-tD7AJhmWNX-p5qMdXjaVfVd0usF) |
+
+With advanced dropouts such as weight dropout, PRU achieves s perplexity of 56.56 on the PenTree dataset while learning only 19 million parameters. See our paper for more details.
 
 ## Pre-requisite
 To run this code, you need to have following libraries:
