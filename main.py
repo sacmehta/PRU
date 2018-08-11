@@ -105,13 +105,15 @@ def trainEvalLM(args):
                     math.exp(train_loss), math.exp(val_loss)))
                 logger.flush()
 
-                for prm in model.parameters():
-                    prm.data = tmp[prm].clone()
-
                 if val_loss < stored_loss:
                     model_save(args.save, model, criterion, optimizer, epoch)
                     print('Saving Averaged (new best validation)')
                     stored_loss = val_loss
+
+                for prm in model.parameters():
+                    prm.data = tmp[prm].clone()
+
+
             else:
                 val_loss = evaluate(args, model, criterion, val_data, ntokens, eval_batch_size)
 
