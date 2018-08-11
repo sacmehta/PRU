@@ -43,7 +43,7 @@ GPUs by using DataParallel module in PyTorch.
 ## Testing PRU on the PenTree dataset
 You can test the models using following command
 ```
-CUDA_VISIBLE_DEVICES=0 python test.py --model PRU --g 4 --k 2 --emsize 400 --nhid 1400 --data ./data/penn --weightFile <trained model file>
+CUDA_VISIBLE_DEVICES=0 python test.py --data ./data/penn --weightFile <trained model file> --batchSize 1
 ```
 Please see **test.py** for details about command line arguments.
 
