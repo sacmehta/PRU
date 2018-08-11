@@ -2,7 +2,7 @@
 
 This repository contains the source code of our paper, Pyramidal Recurrent units for language modeling, which is accepted for publication at [EMNLP'18](http://emnlp2018.org/).
 
-**NOTE**: Though we tested our module (PRU) on a highly competitive task of language modeling, our module can be generic enough and can be used for different applications where RNNs (such as LSTMs and GRUs) are currently used, such as question answering, text classification, and machine translation.
+**NOTE**: Though we tested our module (PRU) on a highly competitive task of language modeling, our module is generic enough and can be used for different applications where RNNs (such as LSTMs and GRUs) are currently used, such as question answering, text classification, and machine translation.
 
 ## Block diagram of PRU
 
