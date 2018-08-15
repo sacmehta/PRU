@@ -56,9 +56,9 @@ Below table compares the perplexity scores of language models with LSTM and PRU 
 | LSTM | NA | NA | 400 | 1200 | 25.79 | 69.29 | 67.17 | 206 | [Link](https://drive.google.com/open?id=1ggw_mbEDHsFFe5tc3cwuJdlqVEi2a3Wl) |
 | LSTM | NA | NA | 400 | 1400 | 32.68 | 70.23 | 68.32 | 261 | [Link](https://drive.google.com/open?id=1lkKKx1KUESFQp2cRQh4O-TV_ENUk0HtP) |
 | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-| PRU | 1 | 2 | 400 | 1000 | 18.97 | 69.99 | 68.06 | 151 | [Link](https://drive.google.com/open?id=1pAWz6ZQDTJc0C3bWNBxeQJ0DREo9EZqo) |
-| PRU | 2 | 2 | 400 | 1200 | 18.51 | 66.39 | 64.30 | 148 | [Link](https://drive.google.com/open?id=1rMBQio3nITbCgPhMkgw9Kev0gVDBBS6M) |
-| PRU | 4 | 2 | 400 | 1400 | 18.90 | **64.40** | **62.62** | 151 | [Link](https://drive.google.com/open?id=1h2f3-tD7AJhmWNX-p5qMdXjaVfVd0usF) |
+| PRU | 1 | 2 | 400 | 1000 | 18.97 | 69.99 | 68.06 | 151 | [Link](https://drive.google.com/open?id=1Nq0u7-detQp9dCUwuMGVLAWb37RwEx9D) |
+| PRU | 2 | 2 | 400 | 1200 | 18.51 | 66.39 | 64.30 | 148 | [Link](https://drive.google.com/open?id=1szGxRTyiwkzXsXQ-cvt_K0YBN2tQAcJO) |
+| PRU | 4 | 2 | 400 | 1400 | 18.90 | **64.40** | **62.62** | 151 | [Link](https://drive.google.com/open?id=12yMmUznLICRkHVAbElqsofLLb7htQoEs) |
 
 **NOTE**:
  * The performance of PRU can be further improved by using advanced methods such as weight dropout and [dynamic evaluations](https://arxiv.org/pdf/1709.07432.pdf). If you evaluate above pretrained models with dynamic evaluation, then you should see an improvement in perplexity by about 6-8% for both LSTM and PRU-based models.
