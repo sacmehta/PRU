@@ -47,14 +47,14 @@ CUDA_VISIBLE_DEVICES=0 python test.py --data ./data/penn --weightFile <trained m
 ```
 Please see **test.py** for details about command line arguments.
 
-## Pretrained models
+## Pretrained models on the Pentree dataset
 Below table compares the perplexity scores of language models with LSTM and PRU as a recurrent unit (with standard dropout only). We can see that PRU has better generalization properties than LSTMs and enables learning representations in very high-dimensional space efficiently.
 
 | Model | g | k | emsize | nhid | # Params | Perplexity (val) | Perplexity (test) | Model Size (in MB) | Model Link | 
 | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-| LSTM | NA | NA | 400 | 1000 | 19.87 | 67.8 | 66.05 | 159 | [Link](https://drive.google.com/open?id=1FzhY03OlBQpLKwTIfMFcQVfwPYDfXO1I) |
-| LSTM | NA | NA | 400 | 1200 | 25.79 | 69.29 | 67.17 | 206 | [Link](https://drive.google.com/open?id=1NquUJTUOewyso7BfcpW6mHqYh1GvlBDI) |
-| LSTM | NA | NA | 400 | 1400 | 32.68 | 70.23 | 68.32 | 261 | [Link](https://drive.google.com/open?id=1nD8fnruUrO3WhMSsWU4P9zswnXy59n8T) |
+| LSTM | NA | NA | 400 | 1000 | 19.87 | 67.8 | 66.05 | 159 | [Link](https://drive.google.com/open?id=1WMIpVbFRwR8PDIbR_UxAV8H0NGLCmT8p) |
+| LSTM | NA | NA | 400 | 1200 | 25.79 | 69.29 | 67.17 | 206 | [Link](https://drive.google.com/open?id=1ggw_mbEDHsFFe5tc3cwuJdlqVEi2a3Wl) |
+| LSTM | NA | NA | 400 | 1400 | 32.68 | 70.23 | 68.32 | 261 | [Link](https://drive.google.com/open?id=1lkKKx1KUESFQp2cRQh4O-TV_ENUk0HtP) |
 | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 | PRU | 1 | 2 | 400 | 1000 | 18.97 | 69.99 | 68.06 | 151 | [Link](https://drive.google.com/open?id=1pAWz6ZQDTJc0C3bWNBxeQJ0DREo9EZqo) |
 | PRU | 2 | 2 | 400 | 1200 | 18.51 | 66.39 | 64.30 | 148 | [Link](https://drive.google.com/open?id=1rMBQio3nITbCgPhMkgw9Kev0gVDBBS6M) |
